@@ -8,6 +8,7 @@
   --secondary-color: #000000;
   --footer-color-link: rgba(255, 255, 255, 0.6);
   --border-solid-color: #eeeeee;
+  --border-bottom-color: #ececec;
 }
 
 body {
@@ -80,7 +81,7 @@ img {
 
 /*------------------ НАВИГАЦИЯ ---------------- */
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 
 .header-container {
