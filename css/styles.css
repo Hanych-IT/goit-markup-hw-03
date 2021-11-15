@@ -58,12 +58,9 @@ img {
   height: auto;
 }
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  /* outline: 1px solid red; */
+  width: 1170px;
+  padding: 0 15px;
+  margin-left: 0 auto;
 }
 
 /*------------------ ЛОГО САЙТА ---------------- */
@@ -73,7 +70,6 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  margin-right: 92px;
 }
 .logo-web {
   color: var(--accent-color);
@@ -83,10 +79,16 @@ img {
 }
 
 /*------------------ НАВИГАЦИЯ ---------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+}
 
 .header-container {
   display: flex;
   align-items: center;
+}
+.nav {
+  margin-left: 93px;
 }
 .nav-list {
   display: flex;
@@ -162,31 +164,24 @@ img {
 
 /*------------------ ГЕРОЙ ---------------- */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0px;
   text-align: center;
   background-color: var(--first-background-color);
 }
 
 .hero-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-color);
-  height: 120px;
   width: 696px;
 }
 
 .primary-button {
-  display: block;
   padding: 10px 32px;
-  margin: auto;
 
   font-family: inherit;
   font-weight: bold;
@@ -216,9 +211,8 @@ img {
   display: flex;
   align-items: center;
 }
-
-.features-item {
-  padding: 94px 0;
+.features {
+  padding: 94px 0 47px 0;
 }
 
 .features-item .features-discription {
@@ -236,7 +230,9 @@ img {
 }
 
 /*------------------ ЧЕМ МЫ ЗАНИМАЕМСЯ ---------------- */
-
+.section-works {
+  padding: 47px 0px 94px 0px;
+}
 .section-title-works {
   padding-top: 0px;
   margin-bottom: 50px;
@@ -250,8 +246,6 @@ img {
   display: flex;
 }
 .work-item {
-  padding-top: 0px;
-  padding-bottom: 94px;
   align-items: center;
 }
 
@@ -262,22 +256,20 @@ img {
 /* Команда */
 
 .section-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
 }
 
 .team-section {
+  padding-bottom: 94px;
   background-color: var(--our-team-bg-color);
 }
 .team-list {
   display: flex;
-  padding-bottom: 94px;
 }
 .team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -315,28 +307,19 @@ img {
 /*------------------ ПОДВАЛ---------------- */
 .page-footer {
   background-color: var(--first-background-color);
-  padding-bottom: 60px;
-}
-.footer-container {
-  /* display: flex; */
-  padding-top: 60px;
-  margin-bottom: 20px;
+  padding: 60px 0;
 }
 
 .footer-contacts-list {
   display: block;
-  margin-top: 20px;
 }
 
-.contact-address .contacts-list {
+.contact-address {
+  font-style: normal;
   margin-top: 20px;
-  padding-bottom: 60px;
-  margin-left: auto;
-  margin-right: 0px;
 }
 .footer-contact-item + .footer-contact-item {
   margin-top: 9px;
-  margin-right: 0px;
 }
 
 .logo-white {
@@ -348,8 +331,6 @@ img {
   color: var(--primary-color);
 }
 .footer-contact-link {
-  display: block;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -361,9 +342,6 @@ img {
 }
 
 .map-link {
-  display: block;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -377,14 +355,16 @@ img {
 
 /*------------------ СТРАНИЦА ПОРТФОЛИО ---------------- */
 
+.section-portfolio {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  margin-bottom: 34px;
 }
-.filter-item {
-  padding-bottom: 34px;
-}
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -397,7 +377,7 @@ img {
   color: var(--discription-color);
 }
 .secondary-button {
-  padding: 6px, 22px;
+  padding: 6px 22px;
   font-family: inherit;
   border: none;
   font-weight: 500;
@@ -424,7 +404,6 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .portfolio-item {
@@ -440,9 +419,8 @@ img {
 }
 .portfolio-description-field {
   padding: 20px 24px;
-  border-left: 1px solid var(--border-solid-color);
-  border-right: 1px solid var(--border-solid-color);
-  border-bottom: 1px solid var(--border-solid-color);
+  border-top: none;
+  border: 1px solid var(--border-solid-color);
 }
 .portfolio-title {
   font-weight: bold;
