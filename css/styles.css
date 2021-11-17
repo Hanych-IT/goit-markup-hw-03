@@ -212,15 +212,7 @@ img {
 .section-works {
   padding: 47px 0 94px 0;
 }
-.section-title-works {
-  padding-top: 0px;
-  margin-bottom: 50px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
+
 .works-list {
   display: flex;
 }
@@ -275,7 +267,7 @@ img {
 }
 .team-description {
   text-align: center;
-  padding: 30px 59px;
+  padding: 30px 0;
 }
 
 /*------------------ ПОДВАЛ---------------- */
